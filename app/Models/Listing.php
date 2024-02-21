@@ -1,24 +1,11 @@
-<?php 
+<?php
+
 namespace App\Models;
 
-class Listing {
-    public static function all() {
-        return [ 
-            [
-            'id' => 1,
-            'title' => 'Listing One',
-            'description' => 'Description one'
-            ],
-            [
-            'id' => 2,
-            'title' => 'Listing Two',
-            'description' => 'Description two'
-            ],
-        ];
-    }
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-public static function find($id) {
- 
-}
-
+class Listing extends Model
+{
+    use HasFactory;
 }
