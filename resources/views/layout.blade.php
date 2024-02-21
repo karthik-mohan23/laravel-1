@@ -12,18 +12,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            laravel: "#ef3b2d",
-                        },
-                    },
-                },
-            };
-        </script>
+ <link rel="stylesheet" href="{{  asset('css/app.css') }}">
         <title>LaraGigs | Find Laravel Jobs & Projects</title>
     </head>
     <body class="mb-48">
