@@ -21,6 +21,11 @@ Route::get('/', function () {
         'listings' => Listing::all()
     ]);
 });
+Route::get('/listings/{id}', function ($id) {
+    return view('listing', [
+        'listing' => Listing::find($id)
+    ]);
+});
 
 // Route::get("/hello", function () {
 //     return response('Hello World',200)
